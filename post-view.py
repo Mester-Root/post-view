@@ -61,7 +61,7 @@ num = int(num)
 _NUMBER_ = int(number)
 while number != num:
     # -------------- head ------------
-    head = {'Host':'https://messengerg2c74.iranlms.ir/','UserAgent': pyuseragents.random(),'Content-Type':'application/json','Accept':'application/json, text/plain, */*','content-length':'2127','content-type':'application/json'}
+    head = {'Host':'https://messengerg2c74.iranlms.ir/','User-Agent': pyuseragents.random(),'Content-Type':'application/json','Accept':'application/json, text/plain, */*','content-length':'2127','content-type':'application/json'}
     # --------- json ----------
     json = {"api_version":"5","method":"messenger","username": username,"user-caption": username,"user_modal_username": username,"data_enc":"O3uANv/X/dpDKAjFxc1gZqTmvJ0kcP1ke8RlTBw19mfAOBMva/JpF/yJskbNI/ZqxStLAoJY29pB2L0OXDnKdXEUUvcCdrZjAqJKLvehKbTsBh7FDiAViDZwJi24FBdE6E4Zo7/VC1r9lYFsFb10o4SBHL5UEw1MrRhoDJi5yaAlIhpSwChKukCt5Fy86yBL3mfeUZkWHBHRzir3eQCfHXo64cxkGQdUSASrSE6TKHkt9b2xGy1ToD0UFH2eX9yOnZKoNk3oSZcSHf5BYgOyKw=="}
     # --------- data ---------
