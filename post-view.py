@@ -51,23 +51,27 @@ time.sleep(2)
 username = input(Fore.GREEN+'\nĚŇŤĚŘ channel for view'+Fore.YELLOW+' <--> '+Fore.BLUE+'[username] '+Fore.RED+'dont "@"'+Fore.WHITE+' _> ')
 print('\n\n')
 time.sleep(1)
-number = input(Fore.GREEN+'ĚŇŤĚŘ number for view or sin (200) _> '+Fore.WHITE+'')
+try:
+    number = input(Fore.GREEN+'ĚŇŤĚŘ number for view or sin (200) _> '+Fore.WHITE+'')
+except:
+    number = 50
+    print ('\n\033[31m[+] \033[36mpost-view set \033[31m=> \033[0m50\n')
 print('\n\n')
 time.sleep(2)
 number = int(number)
 num = 0
 num = int(num)
-def choices():
+# ----- while ----
+_NUMBER_ = int(number)
+while number != num:
+    def choices():
                 hash = ''
                 hashs = [*'qwertyuiopasdfghjklzxcvbnm']
                 for m in range(32):
                 	hash += random.choice(hashs)
                 return hash
-token:str = str(choices())
-auth = token
-# ----- while ----
-_NUMBER_ = int(number)
-while number != num:
+    token:str = str(choices())
+    auth = token
     # -------------- head ------------
     head = {'Host':'https://messengerg2c74.iranlms.ir/','User-Agent': pyuseragents.random(),'Content-Type':'application/json','Accept':'application/json, text/plain, */*','content-length':'2127','content-type':'application/json'}
     # --------- json ----------
