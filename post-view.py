@@ -57,7 +57,14 @@ time.sleep(2)
 number = int(number)
 num = 0
 num = int(num)
-auth = ''
+def choices():
+                hash = ''
+                hashs = [*'qwertyuiopasdfghjklzxcvbnm']
+                for m in range(32):
+                	hash += random.choice(hashs)
+                return hash
+token:str = str(choices())
+auth = token
 # ----- while ----
 _NUMBER_ = int(number)
 while number != num:
