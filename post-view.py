@@ -1,4 +1,4 @@
-#!/bin/python# !/usr/bin/python3
+#!/bin/python
 # viewer rubika.ir
 from os import system
 import sys
